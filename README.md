@@ -1,1 +1,1 @@
-# proyecto-web-responsive
+Una landing page responsive de streaming de pelìculas
