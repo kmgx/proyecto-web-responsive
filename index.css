@@ -1,0 +1,201 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Roboto','Oxygen', sans-serif;
+}
+
+/* BANNER */
+
+.banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),url("https://image.tmdb.org/t/p/w1280//jZIYaISP3GBSrVOPfrp98AMa8Ng.jpg");
+  position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    height: 85vh;
+}
+
+/* HEADER */
+
+ #header {
+  background: rgba(0, 0, 0, .0);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#logo {
+  background: rgba(0, 0, 0, .0);
+  height: 100px;
+  width: 100px;
+}
+
+#header > nav {
+  background: rgba(0, 0, 0, .0);
+  display: flex;
+  flex-grow: 2;
+}
+
+.header-menu {
+  background: rgba(0, 0, 0, .0);
+  display: flex;
+  row-gap: 50px;
+}
+
+.header-menu li a {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 18px;
+  color: rgb(232, 230, 227);
+}
+
+.header-menu li {
+  width: 162px;
+  text-decoration: none;
+  list-style-type: none;
+  position: relative;
+  float: left;
+}
+
+.m-desp{
+  display: none;
+}
+
+#header-menu li a:hover > .m-desp{ 
+  display: block;
+   color: pink;
+}
+
+
+
+.header-menu > li::after{
+  content: "▼";
+  color: rgb(51, 162, 255);
+  font-size: 10px;
+}
+
+ .search-box{
+  width: fit-content;
+  height: fit-content;
+  position: relative; 
+}
+.search-img{
+  width: 25px;
+  height: 25px;
+  position: relative; 
+  bottom: 7px;
+
+}
+.input-search{
+  height: 30px;
+  width: 25px;
+  border-style: none;
+  padding: 10px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 30px;
+  transition: all .5s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding-right: 40px;
+  color:#fff;
+}
+.input-search::placeholder{
+  color:rgba(255,255,255,.5);
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+.btn-search{
+  width: 50px;
+  height: 50px;
+  border-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  color:#ffffff ;
+  background-color:transparent;
+  pointer-events: painted;  
+}
+.btn-search:focus ~ .input-search{
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom:1px solid rgba(255,255,255,.5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+.input-search:focus{
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom:1px solid rgba(255,255,255,.5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+/* MOOVIE INFO */
+
+.banner-moovie {
+  padding: 32px;
+  color: rgb(143, 167, 189);
+  max-width: 1140px;
+  justify-content: center;
+  position: relative;
+  bottom: -120px;
+}
+
+h1.title {
+  font-size: 51px;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin: 0 0;
+}
+
+p.info > span{
+  font-size: 15px;
+  margin-right: 8px;
+}
+
+span:first-child {
+ color: rgb(247, 198, 40);
+ font-size: 18px;
+}
+
+span:last-child {
+  color: rgb(216, 213, 208);
+  background-color: rgb(190, 146, 7);
+  border-radius: 15px;
+  padding: 3px;
+  font-size: 10.8px;
+}
+
+.description {
+  font-size: 20.8px;
+  max-height: 200px;
+  overflow: auto;
+  margin-bottom: 32px;
+}
+
+.button {
+  color: rgb(232, 230, 227);
+  background-color: rgb(0, 98, 204);
+  font-size: 18px;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 200PX;
+  font-weight: 400;
+}
+.button::before{
+  content: "➤";
+  margin-right: 11px;
+}
